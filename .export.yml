@@ -1,0 +1,14 @@
+%YAML 1.1
+---
+version: '>0.9.0 || @head'
+export: |
+
+    project "GLM"
+        kind "StaticLib"
+        files "glm/**"
+
+        zpm.export [[
+            includedirs "."
+            cppdialect "C++11"
+        ]]
+...
