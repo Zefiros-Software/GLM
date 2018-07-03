@@ -1,0 +1,7 @@
+settings:
+  swizzle:
+    default: true
+    reduce: first
+  experimental:
+    default: true
+    reduce: first

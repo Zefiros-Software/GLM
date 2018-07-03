@@ -10,5 +10,13 @@ export: |
         zpm.export [[
             includedirs "."
             cppdialect "C++11"
+
+            if zpm.setting("swizzle") then
+                defines "GLM_FORCE_SWIZZLE"
+            end
+
+            if zpm.setting("experimental") then
+                defines "GLM_ENABLE_EXPERIMENTAL"
+            end
         ]]
 ...
